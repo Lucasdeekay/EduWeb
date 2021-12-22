@@ -1,0 +1,89 @@
+{% extends 'index.html' %}
+
+{% load static %}
+
+{% block title %}
+<title>FAQ | Productivity Booster Services</title>
+{% endblock %}
+
+{% block body %}
+<body class="t-profile-01">
+{% endblock %}
+
+{% block header %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="intro-text ">
+                <h1>FAQ</h1>
+                <p><span><a href="{% url 'Service:home' %}">Home <i class='fa fa-angle-right'></i></a></span><span
+                        class="b-active"> FAQ</span></p>
+            </div>
+        </div>
+    </div><!-- /.row -->
+</div><!-- /.container -->
+
+{% endblock %}
+
+{% block content %}
+
+<!-- Faq Start -->
+<section class="teacher-prolile-01 mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8">
+                <hr>
+                <ul class="">
+                        <li class="faq-item">
+                            <h3 class="btn" id="button1" style="font-size: 20px"><i>Benefits </i><strong class='fa fa-angle-right' style="margin-left:10px ; font-size:20px"></strong></h3>
+                            <p id="faq1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate omnis perspiciatis ullam veniam voluptatibus. Animi autem consequatur corporis cupiditate ea esse ex laborum laudantium officiis rem repudiandae suscipit, veritatis voluptates.</p>
+                        </li>
+                </ul>
+            </div>
+            <div class="col-sm-8">
+                <hr>
+                <ul class="">
+                    <li>
+                            <h3 class="btn" id="button2" style="font-size: 20px"><i>Benefits </i><strong class='fa fa-angle-right' style="margin-left:10px ; font-size: 20px"></strong></h3>
+                            <p id="faq2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate omnis perspiciatis ullam veniam voluptatibus. Animi autem consequatur corporis cupiditate ea esse ex laborum laudantium officiis rem repudiandae suscipit, veritatis voluptates.</p>
+                        </li>
+                </ul>
+            </div>
+            <div class="col-sm-8">
+                <hr>
+                <ul class="">
+                    <li>
+                            <h3 class="btn" id="button3" style="font-size: 20px"><i>Benefits </i><strong class='fa fa-angle-right' style="margin-left:10px ; font-size:20px"></strong></h3>
+                            <p id="faq3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate omnis perspiciatis ullam veniam voluptatibus. Animi autem consequatur corporis cupiditate ea esse ex laborum laudantium officiis rem repudiandae suscipit, veritatis voluptates.</p>
+                        </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Faq End -->
+
+{% endblock %}
+
+{% block script %}
+<script>
+    $(function(){
+    $('#faq1').slideUp('slow');
+    $('#faq2').slideUp('slow');
+    $('#faq3').slideUp('slow');
+
+
+    $('#button1').click(function(){
+        $('#faq1').slideToggle('slow');
+    });
+    $('#button2').click(function(){
+        $('#faq2').slideToggle('slow');
+    });
+    $('#button3').click(function(){
+        $('#faq3').slideToggle('slow');
+    });
+
+});
+</script>
+{% endblock %}

@@ -1,0 +1,633 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+<title>Home | Productivity Booster Services</title>
+{% endblock %}
+
+{% block header %}
+<!--==================
+		Slider
+	===================-->
+<div class="rev_slider_wrapper">
+    <div id="rev_slider_1" class="rev_slider" style="display:none">
+
+        <!-- BEGIN SLIDES LIST -->
+        <ul>
+            <li data-transition="boxfade" data-title="Slide Title" data-param1="Additional Text"
+                data-thumb="{% static 'images/index-02/slide-03.jpg' %}">
+                <div class="slider-overlay"></div>
+                <!-- SLIDE'S MAIN BACKGROUND IMAGE -->
+                <img src="{% static 'images/index-02/slide-03.jpg' %}" alt="Sky" class="rev-slidebg">
+                <!-- BEGIN BASIC TEXT LAYER -->
+                <!-- LAYER NR. 1 -->
+                <div class="tp-caption sfr font-extra-bold tp-resizeme letter-space-4 header-1 title-line-1"
+                     data-x="left" data-hoffset="0"
+                     data-y="center" data-voffset="-140"
+                     data-frames='[{"delay":0,"speed":3000,"frame":"0","from":"x:[175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;","mask":"x:[-100%];y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+                     style="z-index: 6; font-size:60px; color:#fff; font-family: 'Montserrat', sans-serif;, serif; white-space: nowrap;font-weight:700;">
+                    Better education for
+                </div>
+
+                <!-- LAYER NR. 2 -->
+                <div class="tp-caption sfr font-extra-bold tp-resizeme letter-space-4 header-1 title-line-2"
+                     data-x="left" data-hoffset="0"
+                     data-y="center" data-voffset="-80"
+                     data-frames='[{"delay":1000,"speed":3000,"frame":"0","from":"x:[175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;","mask":"x:[-100%];y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+                     style="z-index: 6; font-size:60px; color:#fff; font-family: 'Montserrat', sans-serif;, serif; white-space: nowrap;font-weight:700;">
+                    A better world
+                </div>
+
+                <!-- LAYER NR. 3 -->
+                <div class="tp-caption sfr font-extra-bold tp-resizeme letter-space-4 header-p"
+                     data-x="left" data-hoffset="0"
+                     data-y="center" data-voffset="-10"
+                     data-frames='[{"delay":1000,"speed":3000,"frame":"0","from":"x:[175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;","mask":"x:[-100%];y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+                     style="z-index: 6; line-height:25px; font-size:15px; color:#fff; font-family: 'Open Sans', sans-serif;, serif; white-space: nowrap;">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscingl elit sed diam nonumm nibhy euismod<br>
+                    tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                </div>
+            </li>
+            <li data-transition="random" data-title="Slide Title" data-param1="Additional Text"
+                data-thumb="{% static 'images/index-02/slide-04.jpg' %}">
+                <div class="slider-overlay"></div>
+                <!-- SLIDE'S MAIN BACKGROUND IMAGE -->
+                <img src="{% static 'images/index-02/slide-04.jpg' %}" alt="Sky" class="rev-slidebg">
+                <!-- BEGIN BASIC TEXT LAYER -->
+                <!-- LAYER NR.1 -->
+                <div class="tp-caption sfr font-extra-bold tp-resizeme letter-space-4 header-1 title-line-1"
+                     data-x="left" data-hoffset="0"
+                     data-y="center" data-voffset="-160"
+                     data-frames='[{"delay":0,"speed":3000,"frame":"0","from":"x:[175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;","mask":"x:[-100%];y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+                     style="z-index: 6; font-size:60px; color:#fff; font-family: 'Montserrat', sans-serif;, serif; white-space: nowrap;font-weight:700;">
+                    Better education for
+                </div>
+
+                <!-- LAYER NR. 2 -->
+                <div class="tp-caption sfr font-extra-bold tp-resizeme letter-space-4 header-1 title-line-2"
+                     data-x="left" data-hoffset="0"
+                     data-y="center" data-voffset="-100"
+                     data-frames='[{"delay":1000,"speed":3000,"frame":"0","from":"x:[175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;","mask":"x:[-100%];y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+                     style="z-index: 6; font-size:60px; color:#fff; font-family: 'Montserrat', sans-serif;, serif; white-space: nowrap;font-weight:700;">
+                    A better world
+                </div>
+
+                <!-- LAYER NR. 3 -->
+                <div class="tp-caption font-lora sfb tp-resizeme letter-space-5 header-p"
+                     data-x="left" data-hoffset="0"
+                     data-y="center" data-voffset="-30"
+                     data-frames='[{"delay":0,"speed":2000,"frame":"0","from":"y:top;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+                     style="z-index: 6; line-height:25px; font-size:15px; color:#fff; font-family: 'Open Sans', sans-serif;, serif; white-space: nowrap;">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscingl elit sed diam nonumm nibhy euismod<br>
+                    tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                </div>
+            </li>
+        </ul><!-- END SLIDES LIST -->
+
+    </div><!-- END SLIDER CONTAINER -->
+</div><!-- END SLIDER CONTAINER WRAPPER -->
+{% endblock %}
+
+{% block content %}
+
+<!-- Start Welcome Area section -->
+<section class="Welcome-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 section-header-box">
+                <div class="section-header">
+                    <h2>Welcome to EduWeb</h2>
+                    <p>Lorem ipsum dolor sit amet mollis felis dapibus arcu donec viverra Pede phasellus eget Etiam
+                        maecenas.</p>
+                </div><!-- ends: .section-header -->
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4 wel-ful-box-2">
+                <div class="wel-text-box">
+                    <div class="wel-icon">
+                        <img src="{% static 'images/index-02/welcome-01.png' %}" alt="">
+                    </div>
+                    <div class="wel-text">
+                        <h3>Learn Anywhere Online</h3>
+                        <p>Lorem ipsum dolor sit amet mollis felis dapibus arcu donec viverra Pede phasellus eget Etiam
+                            maecenas.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4 wel-ful-box-2">
+                <div class="wel-text-box">
+                    <div class="wel-icon">
+                        <img src="{% static 'images/index-02/welcome-02.png' %}" alt="">
+                    </div>
+                    <div class="wel-text">
+                        <h3>Graduation Certificate</h3>
+                        <p>Lorem ipsum dolor sit amet mollis felis dapibus arcu donec viverra Pede phasellus eget Etiam
+                            maecenas.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4  wel-ful-box-2">
+                <div class="wel-text-box">
+                    <div class="wel-icon">
+                        <img src="{% static 'images/index-02/welcome-03.png' %}" alt="">
+                    </div>
+                    <div class="wel-text">
+                        <h3>Professional Teachers</h3>
+                        <p>Lorem ipsum dolor sit amet mollis felis dapibus arcu donec viverra Pede phasellus eget Etiam
+                            maecenas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ./ End Welcome Area section -->
+
+<!-- Start Information Area Section -->
+<section class="information-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+                <div class="info-content-box">
+                    <h2>Need More Information?</h2>
+                    <p>Lorem ipsum dolor sit amet mollis felis dapibus arcu donec viverra Pede phasell us eget Etiam
+                        maecenas vel vici quis dictum rutrum nec nisi Ac penatibus.</p>
+                    <div class="info-btn">
+                        <a href="#" class="information-btn">contact us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ./ End Information Area section -->
+
+
+<!-- Start Up Comming Events Area Section -->
+<section class="events-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 section-header-box">
+                <div class="section-header">
+                    <h2>Upcoming Events</h2>
+                    <p>Lorem ipsum dolor sit amet mollis felis dapibus arcu donec viverra Pede phasellus eget Etiam
+                        maecenas.</p>
+                </div><!-- ends: .section-header -->
+            </div>
+        </div>
+
+
+        <div class="row event-body-content">
+            <div class="col-sm-6 event-single">
+                <div class="events-single-box">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <img src="{% static 'images/index-02/events-01.jpg' %}" alt="" class="img-responsive">
+                        </div>
+
+                        <div class="col-sm-12">
+                            <div class="event-info">
+                                <h3>Basic UI & UX Design for new development</h3>
+                                <p class="events-time">
+									<span>
+										<i class="fa fa-calendar event-icon"></i>
+										1st January
+									</span>
+                                    <span>
+										<i class="fa fa-clock-o event-icon"></i>
+										8:00am - 5:00pm
+									</span>
+                                    <span>
+										<i class="fa fa-map-marker event-icon"></i>
+										New York
+									</span>
+                                </p>
+
+                                <p>Lorem ipsum dolor sit amet mollis felis dapibus arcur donec viverra phasellus eget.
+                                    Etiam maecenas vel vici quis.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 event-single">
+                <div class="events-single-box">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <img src="{% static 'images/index-02/events-02.jpg' %}" alt="" class="img-responsive">
+                        </div>
+
+                        <div class="col-sm-12">
+                            <div class="event-info">
+                                <h3>Discover something great to do on campus.</h3>
+                                <p class="events-time">
+									<span>
+										<i class="fa fa-calendar event-icon"></i>
+										1st January
+									</span>
+                                    <span>
+										<i class="fa fa-clock-o event-icon"></i>
+										8:00am - 5:00pm
+									</span>
+                                    <span>
+										<i class="fa fa-map-marker event-icon"></i>
+										New York
+									</span>
+                                </p>
+
+                                <p>Lorem ipsum dolor sit amet mollis felis dapibus arcur donec viverra phasellus eget.
+                                    Etiam maecenas vel vici quis.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- ./ End Events Area section -->
+
+
+<!-- Student Parent Say Area section -->
+<section class="stu-parent-say-area">
+    <div class="overlay-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 section-header-box">
+                    <div class="section-header">
+                        <h2>What Beneficiaries SAY</h2>
+                        <p>Lorem ipsum dolor sit amet mollis felis dapibus arcu donec viverra Pede phasellus eget Etiam
+                            maecenas.</p>
+                    </div><!-- ends: .section-header -->
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="screen-content-box  wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".5s">
+                    <div class="testimonial-wrapper owl-carousel" id="parent-say-02">
+                        <div>
+                            <div class="single--item">
+                                <div class="content-box">
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonuy my nibh
+                                        euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+                                    <ul class="list-unstyled rating-box">
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="images-box">
+                                    <ul class="list-unstyled">
+                                        <li><img src="{% static 'images/index/teachar-s-01.jpg' %}" alt=""></li>
+                                        <li>
+                                            <h3>Jhonthan Smith</h3>
+                                            <span>Alexis, Parents</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div>
+                            <div class="single--item">
+                                <div class="content-box">
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonuy my nibh
+                                        euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+                                    <ul class="list-unstyled rating-box">
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="images-box">
+                                    <ul class="list-unstyled">
+                                        <li><img src="{% static 'images/index/teachar-s-03.jpg' %}" alt=""></li>
+                                        <li>
+                                            <h3>taylor swift </h3>
+                                            <span>Jerry, Parents</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div>
+                            <div class="single--item">
+                                <div class="content-box">
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonuy my nibh
+                                        euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+                                    <ul class="list-unstyled rating-box">
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="images-box">
+                                    <ul class="list-unstyled">
+                                        <li><img src="{% static 'images/index/teachar-s-02.jpg' %}" alt=""></li>
+                                        <li>
+                                            <h3>Jhonthan Smith</h3>
+                                            <span>Alexis, Parents</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="single--item">
+                                <div class="content-box">
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonuy my nibh
+                                        euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+                                    <ul class="list-unstyled rating-box">
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="images-box">
+                                    <ul class="list-unstyled">
+                                        <li><img src="{% static 'images/index/teachar-s-04.jpg' %}" alt=""></li>
+                                        <li>
+                                            <h3>oscar charls</h3>
+                                            <span>Perry, Parents</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="single--item">
+                                <div class="content-box">
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonuy my nibh
+                                        euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+                                    <ul class="list-unstyled rating-box">
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="images-box">
+                                    <ul class="list-unstyled">
+                                        <li><img src="{% static 'images/index/teachar-s-05.jpg' %}" alt=""></li>
+                                        <li>
+                                            <h3>Jhonthan Smith</h3>
+                                            <span>Alexis, Parents</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--./row-->
+        </div>
+    </div>
+</section>
+<!-- ./ End Student Parent Say section -->
+
+
+<!-- Teachers Area section -->
+<section class="teachers-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 section-header-box">
+                <div class="section-header">
+                    <h2>Meet Our Leaders</h2>
+                    <p>Lorem ipsum dolor sit amet mollis felis dapibus arcu donec viverra Pede phasellus eget Etiam
+                        maecenas.</p>
+                </div><!-- ends: .section-header -->
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6 col-md-3 team-single-info-02">
+                <div class="teacher-body">
+                    <img src="{% static 'images/index-02/teachar-01.jpg' %}" alt="" class="img-responsive">
+                    <div class="teachars-info">
+                        <h3>David Martin</h3>
+                        <span>ADMINISTRATIVE HEAD</span>
+                        <ul class="list-unstyled">
+                            <li><a href="#"><i class="fa fa-facebook teacher-icon"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter teacher-icon"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus teacher-icon"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin teacher-icon"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram teacher-icon"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-3 team-single-info-02">
+                <div class="teacher-body">
+                    <img src="{% static 'images/index-02/teachar-02.jpg' %}" alt="" class="img-responsive">
+                    <div class="teachars-info">
+                        <h3>Michael Smith</h3>
+                        <span>CHAIRMAN</span>
+                        <ul class="list-unstyled">
+                            <li><a href="#"><i class="fa fa-facebook teacher-icon"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter teacher-icon"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus teacher-icon"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin teacher-icon"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram teacher-icon"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-3 team-single-info-02">
+                <div class="teacher-body">
+                    <img src="{% static 'images/index-02/teachar-03.jpg' %}" alt="" class="img-responsive">
+                    <div class="teachars-info">
+                        <h3>Katie Hale</h3>
+                        <span>SECRETARY</span>
+                        <ul class="list-unstyled">
+                            <li><a href="#"><i class="fa fa-facebook teacher-icon"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter teacher-icon"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus teacher-icon"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin teacher-icon"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram teacher-icon"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-3 team-single-info-02">
+                <div class="teacher-body">
+                    <img src="{% static 'images/index-02/teachar-04.jpg' %}" alt="" class="img-responsive">
+                    <div class="teachars-info">
+                        <h3>Willian Kane</h3>
+                        <span>SPEAKER</span>
+                        <ul class="list-unstyled">
+                            <li><a href="#"><i class="fa fa-facebook teacher-icon"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter teacher-icon"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus teacher-icon"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin teacher-icon"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram teacher-icon"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- ./ End Teachers Area section -->
+
+
+<!-- Start Blog page Area section -->
+<div class="section-paddings gallery-images event-01">
+	<div class="container">
+        <div class="container">
+        <div class="row">
+            <div class="col-sm-12 section-header-box">
+                <div class="section-header">
+                    <h2>Gallery</h2>
+                    <p>Lorem ipsum dolor sit amet mollis felis dapibus arcu donec viverra Pede phasellus eget Etiam
+                        maecenas.</p>
+                </div><!-- ends: .section-header -->
+            </div>
+        </div>
+        </div>
+		<div class="row gallery_img_wrapper">
+			<div class="col-12 col-sm-6 col-md-6 col-lg-4">
+				<div class="single-gallery">
+					<figure>
+						<img src="{% static 'images/index-04/courses-01.jpg' %}" alt="">
+						<figcaption>
+							<a href="{% static 'images/index-04/courses-01.jpg' %}" title=""><i class="fa fa-eye"></i></a>
+							<h4>Caption <span>Education Class</span></h4>
+							<h3>Caption By: <span>Michel Jusi</span></h3>
+						</figcaption>
+					</figure>
+				</div>
+			</div> <!-- end single-gallery -->
+
+			<div class="col-12 col-sm-6 col-md-6 col-lg-4">
+				<div class="single-gallery">
+					<figure>
+						<img src="{% static 'images/index-04/courses-02.jpg' %}" alt="">
+						<figcaption>
+							<a href="{% static 'images/index-04/courses-02.jpg' %}" title=""><i class="fa fa-eye"></i></a>
+							<h4>Caption <span>Education Class</span></h4>
+							<h3>Caption By: <span>Daniel Baci</span></h3>
+						</figcaption>
+					</figure>
+				</div>
+			</div> <!-- end single-gallery -->
+
+			<div class="col-12 col-sm-6 col-md-6 col-lg-4">
+				<div class="single-gallery">
+					<figure>
+						<img src="{% static 'images/index-04/courses-01.jpg' %}" alt="">
+						<figcaption>
+							<a href="{% static 'images/index-04/courses-03.jpg' %}" title=""><i class="fa fa-eye"></i></a>
+							<h4>Caption <span>Education Class</span></h4>
+							<h3>Caption By: <span>John Adam</span></h3>
+						</figcaption>
+					</figure>
+				</div>
+			</div> <!-- end single-gallery -->
+
+			<div class="col-12 col-sm-6 col-md-6 col-lg-4">
+				<div class="single-gallery">
+					<figure>
+						<img src="{% static 'images/index-04/courses-04.jpg' %}" alt="">
+						<figcaption>
+							<a href="{% static 'images/index-04/courses-04.jpg' %}" title=""><i class="fa fa-eye"></i></a>
+							<h4>Caption <span>Education Class</span></h4>
+							<h3>Caption By: <span>Michel Jusi</span></h3>
+						</figcaption>
+					</figure>
+				</div>
+			</div> <!-- end single-gallery -->
+
+			<div class="col-12 col-sm-6 col-md-6 col-lg-4">
+				<div class="single-gallery">
+					<figure>
+						<img src="{% static 'images/index-04/courses-05.jpg' %}" alt="">
+						<figcaption>
+							<a href="{% static 'images/index-04/courses-05.jpg' %}" title=""><i class="fa fa-eye"></i></a>
+							<h4>Caption <span>Education Class</span></h4>
+							<h3>Caption By: <span>Daniel Baci</span></h3>
+						</figcaption>
+					</figure>
+				</div>
+			</div> <!-- end single-gallery -->
+
+			<div class="col-12 col-sm-6 col-md-6 col-lg-4">
+				<div class="single-gallery">
+					<figure>
+						<img src="{% static 'images/index-04/courses-06.jpg' %}" alt="">
+						<figcaption>
+							<a href="{% static 'images/index-04/courses-06.jpg' %}" title=""><i class="fa fa-eye"></i></a>
+							<h4>Caption <span>Education Class</span></h4>
+							<h3>Caption By: <span>John Adam</span></h3>
+						</figcaption>
+					</figure>
+				</div>
+			</div> <!-- end single-gallery -->
+			<div class="col-12 col-sm-6 col-md-6 col-lg-4">
+				<div class="single-gallery">
+					<figure>
+						<img src="{% static 'images/index-04/courses-01.jpg' %}" alt="">
+						<figcaption>
+							<a href="{% static 'images/index-04/courses-01.jpg' %}" title=""><i class="fa fa-eye"></i></a>
+							<h4>Caption <span>Education Class</span></h4>
+							<h3>Caption By: <span>Michel Jusi</span></h3>
+						</figcaption>
+					</figure>
+				</div>
+			</div> <!-- end single-gallery -->
+
+			<div class="col-12 col-sm-6 col-md-6 col-lg-4">
+				<div class="single-gallery">
+					<figure>
+						<img src="{% static 'images/index-04/courses-02.jpg' %}" alt="">
+						<figcaption>
+							<a href="{% static 'images/index-04/courses-02.jpg' %}" title=""><i class="fa fa-eye"></i></a>
+							<h4>Caption <span>Education Class</span></h4>
+							<h3>Caption By: <span>Daniel Baci</span></h3>
+						</figcaption>
+					</figure>
+				</div>
+			</div> <!-- end single-gallery -->
+
+			<div class="col-12 col-sm-6 col-md-6 col-lg-4">
+				<div class="single-gallery">
+					<figure>
+						<img src="{% static 'images/index-04/courses-01.jpg' %}" alt="">
+						<figcaption>
+							<a href="{% static 'images/index-04/courses-03.jpg' %}" title=""><i class="fa fa-eye"></i></a>
+							<h4>Caption <span>Education Class</span></h4>
+							<h3>Caption By: <span>John Adam</span></h3>
+						</figcaption>
+					</figure>
+				</div>
+			</div> <!-- end single-gallery -->
+		</div>
+	</div>
+</div> <!-- incredible place end here -->
+<!-- ./ End blog Area section -->
+
+{% endblock %}

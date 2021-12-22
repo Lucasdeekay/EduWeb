@@ -1,0 +1,86 @@
+{% extends 'index.html' %}
+
+{% load static %}
+
+{% block title %}
+<title>Admin Manager | Productivity Booster Services</title>
+{% endblock %}
+
+{% block body %}
+<body class="register">
+{% endblock %}
+
+{% block header %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="intro-text ">
+                <h1>Admin Manager</h1>
+            </div>
+        </div>
+    </div><!-- /.row -->
+</div><!-- /.container -->
+
+{% endblock %}
+
+{% block content %}
+
+{% for message in messages %}
+<section class="slider-content-bottom">
+    <div class="container">
+        <div class="row">
+            {% if message.success %}
+            <div class="col-md-4 content_body slide_cont_box_02">
+                <div class="slider-btm-box btm-item_02">
+                    <h3>Upload Successful</h3>
+                    {% else %}
+                    <div class="col-md-4 content_body slide_cont_box_03">
+                        <div class="slider-btm-box btm-item_03">
+                            <h3>Upload Failed</h3>
+                            {% endif %}
+                            <p>{{ message }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endfor %}
+
+<!-- Admin Area section -->
+<section class="register-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+                <form action="{% url 'Service:upload' %}" class="learnpro-register-form" method="post"
+                      enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <p class="lead">Add New Updates</p>
+                    <div class="form-group">
+                        <input autocomplete="off" class="form-control" name="topic" placeholder="Topic" required
+                               type="text" maxlength="50">
+                    </div>
+                    <textarea class="form-control" placeholder="Write Article..." name="article" rows="8"
+                              style="resize: none;" maxlength="250" required></textarea>
+                    <div class="d-flex pt-3">
+                        <div class="small border-bottom w-100">
+                            <div class="d-flex justify-content-between">
+                                <h6><strong>Image</strong></h6>
+                                <h6><strong><input style="width:500px" type="file" name="image"
+                                                   required></strong></h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group register-btn">
+                        <button class="btn btn-primary btn-lg">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ./ End Admin Area section -->
+
+{% endblock %}

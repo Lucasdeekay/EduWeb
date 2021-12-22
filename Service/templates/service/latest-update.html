@@ -1,0 +1,368 @@
+{% extends 'index.html' %}
+
+{% load static %}
+
+{% block title %}
+<title>Latest Updates | Productivity Booster Services</title>
+{% endblock %}
+
+{% block header %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="intro-text ">
+                <h1>Latest Updates</h1>
+                <p><span><a href="{% url 'Service:home' %}">Home <i class='fa fa-angle-right'></i></a></span><span class="b-active"> Latest Updates</span></p>
+            </div>
+        </div>
+    </div><!-- /.row -->
+</div><!-- /.container -->
+
+{% endblock %}
+
+{% block body %}
+<body class="blog_1">
+{% endblock %}
+
+{% block content %}
+
+<div class="blog-area">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 bolg_side-left d-flex">
+
+				{% for article in all_articles %}
+				<div class="col-sm-4 single-item-box">
+					<div class="single-item">
+						<div class="img-box">
+							<a href="#"><img src="media/{{ article.image }}" alt="" class="img-responsive"></a>
+							<span><a href="#" class="overlay"></a></span>
+							<div class="img-caption">
+								<p class="date"><span>{{ article.date.day }}</span>
+									{% if article.date.month == 1 %}
+									<span>Jan</span>
+									{% elif article.date.month == 2 %}
+									<span>Feb</span>
+									{% elif article.date.month == 3 %}
+									<span>Mar</span>
+									{% elif article.date.month == 4 %}
+									<span>Apr</span>
+									{% elif article.date.month == 5 %}
+									<span>May</span>
+									{% elif article.date.month == 6 %}
+									<span>Jun</span>
+									{% elif article.date.month == 7 %}
+									<span>Jul</span>
+									{% elif article.date.month == 8 %}
+									<span>Aug</span>
+									{% elif article.date.month == 9 %}
+									<span>Sep</span>
+									{% elif article.date.month == 10 %}
+									<span>Oct</span>
+									{% elif article.date.month == 11 %}
+									<span>Nov</span>
+									{% elif article.date.month == 12 %}
+									<span>Dec</span>
+									{% endif %}
+								</p>
+							</div>
+						</div>
+						<div class="single-text-box">
+							<h3><a href="#">{{ article.topic }}</a></h3>
+							<ul class="list-unstyled">
+								<li><a href="#">By Admin</a></li>
+								<li><a href="#">{{ article.date.date }}</a></li>
+								{% if article.recently_posted %}
+								<li><a href="#">Recently posted</a></li>
+								{% else %}
+								<li><a href="#">Not Recently posted</a></li>
+								{% endif %}
+								<li><a href="#">{{ article.duration_of_article_publication }}</a></li>
+							</ul>
+							<p>{{ article.article }}</p>
+						</div>
+					</div>
+				</div>
+				{% endfor %}
+
+				<div class="col-sm-4 single-item-box">
+					<div class="single-item">
+						<div class="img-box">
+							<a href="#"><img src="{% static 'images/blog/blog-02.jpg' %}" alt="" class="img-responsive"></a>
+							<span><a href="#" class="overlay"></a></span>
+							<div class="img-caption">
+								<p class="date"><span>22</span><span>Aug</span></p>
+							</div>
+						</div>
+						<div class="single-text-box">
+							<h3><a href="#">Students in Class Room</a></h3>
+							<ul class="list-unstyled">
+								<li><a href="#">By Admin</a></li>
+								<li><a href="#">22Aug, 2019</a></li>
+								<li><a href="#">20 comments</a></li>
+								<li><a href="#">122 likes</a></li>
+							</ul>
+							<p>Quuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quiaolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt. Minim veniam, quis nostrud exercitation ullamco laboris nisi…</p>
+							<div class="blog-btn-box">
+								<a href="#">Read More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-4 single-item-box">
+					<div class="single-item">
+						<div class="img-box">
+							<a href="#"><img src="{% static 'images/blog/blog-04.jpg' %}" alt="" class="img-responsive"></a>
+							<span><a href="#" class="overlay"></a></span>
+							<div class="img-caption">
+								<p class="date"><span>22</span><span>Aug</span></p>
+							</div>
+						</div>
+						<div class="single-text-box">
+							<h3><a href="#">Cloud Computing Class</a></h3>
+							<ul class="list-unstyled">
+								<li><a href="#">Admin</a></li>
+								<li><a href="#">22Aug, 2019</a></li>
+								<li><a href="#">20 comments</a></li>
+								<li><a href="#">122 likes</a></li>
+							</ul>
+							<p>Quuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quiaolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt. Minim veniam, quis nostrud exercitation ullamco laboris nisi…</p>
+							<div class="blog-btn-box">
+								<a href="#">Read More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-4 single-item-box">
+					<div class="single-item">
+						<div class="img-box">
+							<a href="#"><img src="{% static 'images/blog/blog-03.jpg' %}" alt="" class="img-responsive"></a>
+							<span><a href="#" class="overlay"></a></span>
+							<div class="img-caption">
+								<p class="date"><span>22</span><span>Aug</span></p>
+							</div>
+						</div>
+						<div class="single-text-box">
+							<h3><a href="#">Cloud Computing Class Discussion</a></h3>
+							<ul class="list-unstyled">
+								<li><a href="#">By Admin</a></li>
+								<li><a href="#">22Aug, 2019</a></li>
+								<li><a href="#">20 comments</a></li>
+								<li><a href="#">122 likes</a></li>
+							</ul>
+							<p>Quuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quiaolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt. Minim veniam, quis nostrud exercitation ullamco laboris nisi…</p>
+							<div class="blog-btn-box">
+								<a href="#">Read More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-4 single-item-box">
+					<div class="single-item">
+						<div class="img-box">
+							<a href="#"><img src="{% static 'images/blog/blog-01.jpg' %}" alt="" class="img-responsive"></a>
+							<span><a href="#" class="overlay"></a></span>
+							<div class="img-caption">
+								<p class="date"><span>22</span><span>Aug</span></p>
+							</div>
+						</div>
+						<div class="single-text-box">
+							<h3><a href="#">Amaging Bolg Images Post</a></h3>
+							<ul class="list-unstyled">
+								<li><a href="#">By Admin</a></li>
+								<li><a href="#">22Aug, 2019</a></li>
+								<li><a href="#">20 comments</a></li>
+								<li><a href="#">122 likes</a></li>
+							</ul>
+							<p>Quuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quiaolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt Minim veniam, quis nostrud exercitation ullamco laboris nisi…</p>
+							<div class="blog-btn-box">
+								<a href="#">Read More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-4 single-item-box">
+					<div class="single-item">
+						<div class="img-box">
+							<a href="#"><img src="{% static 'images/blog/blog-04.jpg' %}" alt="" class="img-responsive"></a>
+							<span><a href="#" class="overlay"></a></span>
+							<div class="img-caption">
+								<p class="date"><span>22</span><span>Aug</span></p>
+							</div>
+						</div>
+						<div class="single-text-box">
+							<h3><a href="#">Cloud Computing Class</a></h3>
+							<ul class="list-unstyled">
+								<li><a href="#">Admin</a></li>
+								<li><a href="#">22Aug, 2019</a></li>
+								<li><a href="#">20 comments</a></li>
+								<li><a href="#">122 likes</a></li>
+							</ul>
+							<p>Quuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quiaolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt. Minim veniam, quis nostrud exercitation ullamco laboris nisi…</p>
+							<div class="blog-btn-box">
+								<a href="#">Read More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-4 single-item-box">
+					<div class="single-item">
+						<div class="img-box">
+							<a href="#"><img src="{% static 'images/blog/blog-03.jpg' %}" alt="" class="img-responsive"></a>
+							<span><a href="#" class="overlay"></a></span>
+							<div class="img-caption">
+								<p class="date"><span>22</span><span>Aug</span></p>
+							</div>
+						</div>
+						<div class="single-text-box">
+							<h3><a href="#">Cloud Computing Class Discussion</a></h3>
+							<ul class="list-unstyled">
+								<li><a href="#">By Admin</a></li>
+								<li><a href="#">22Aug, 2019</a></li>
+								<li><a href="#">20 comments</a></li>
+								<li><a href="#">122 likes</a></li>
+							</ul>
+							<p>Quuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quiaolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt. Minim veniam, quis nostrud exercitation ullamco laboris nisi…</p>
+							<div class="blog-btn-box">
+								<a href="#">Read More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-4 single-item-box">
+					<div class="single-item">
+						<div class="img-box">
+							<a href="#"><img src="{% static 'images/blog/blog-01.jpg' %}" alt="" class="img-responsive"></a>
+							<span><a href="#" class="overlay"></a></span>
+							<div class="img-caption">
+								<p class="date"><span>22</span><span>Aug</span></p>
+							</div>
+						</div>
+						<div class="single-text-box">
+							<h3><a href="#">Amaging Bolg Images Post</a></h3>
+							<ul class="list-unstyled">
+								<li><a href="#">By Admin</a></li>
+								<li><a href="#">22Aug, 2019</a></li>
+								<li><a href="#">20 comments</a></li>
+								<li><a href="#">122 likes</a></li>
+							</ul>
+							<p>Quuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quiaolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt Minim veniam, quis nostrud exercitation ullamco laboris nisi…</p>
+							<div class="blog-btn-box">
+								<a href="#">Read More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-4 single-item-box">
+					<div class="single-item">
+						<div class="img-box">
+							<a href="#"><img src="{% static 'images/blog/blog-02.jpg' %}" alt="" class="img-responsive"></a>
+							<span><a href="#" class="overlay"></a></span>
+							<div class="img-caption">
+								<p class="date"><span>22</span><span>Aug</span></p>
+							</div>
+						</div>
+						<div class="single-text-box">
+							<h3><a href="#">Students in Class Room</a></h3>
+							<ul class="list-unstyled">
+								<li><a href="#">By Admin</a></li>
+								<li><a href="#">22Aug, 2019</a></li>
+								<li><a href="#">20 comments</a></li>
+								<li><a href="#">122 likes</a></li>
+							</ul>
+							<p>Quuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quiaolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt. Minim veniam, quis nostrud exercitation ullamco laboris nisi…</p>
+							<div class="blog-btn-box">
+								<a href="#">Read More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-4 single-item-box">
+					<div class="single-item">
+						<div class="img-box">
+							<a href="#"><img src="{% static 'images/blog/blog-04.jpg' %}" alt="" class="img-responsive"></a>
+							<span><a href="#" class="overlay"></a></span>
+							<div class="img-caption">
+								<p class="date"><span>22</span><span>Aug</span></p>
+							</div>
+						</div>
+						<div class="single-text-box">
+							<h3><a href="#">Cloud Computing Class</a></h3>
+							<ul class="list-unstyled">
+								<li><a href="#">Admin</a></li>
+								<li><a href="#">22Aug, 2019</a></li>
+								<li><a href="#">20 comments</a></li>
+								<li><a href="#">122 likes</a></li>
+							</ul>
+							<p>Quuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quiaolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt. Minim veniam, quis nostrud exercitation ullamco laboris nisi…</p>
+							<div class="blog-btn-box">
+								<a href="#">Read More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-4 single-item-box">
+					<div class="single-item">
+						<div class="img-box">
+							<a href="#"><img src="{% static 'images/blog/blog-03.jpg' %}" alt="" class="img-responsive"></a>
+							<span><a href="#" class="overlay"></a></span>
+							<div class="img-caption">
+								<p class="date"><span>22</span><span>Aug</span></p>
+							</div>
+						</div>
+						<div class="single-text-box">
+							<h3><a href="#">Cloud Computing Class Discussion</a></h3>
+							<ul class="list-unstyled">
+								<li><a href="#">By Admin</a></li>
+								<li><a href="#">22Aug, 2019</a></li>
+								<li><a href="#">20 comments</a></li>
+								<li><a href="#">122 likes</a></li>
+							</ul>
+							<p>Quuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quiaolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt. Minim veniam, quis nostrud exercitation ullamco laboris nisi…</p>
+							<div class="blog-btn-box">
+								<a href="#">Read More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-4 single-item-box">
+					<div class="single-item">
+						<div class="img-box">
+							<a href="#"><img src="{% static 'images/blog/blog-01.jpg' %}" alt="" class="img-responsive"></a>
+							<span><a href="#" class="overlay"></a></span>
+							<div class="img-caption">
+								<p class="date"><span>22</span><span>Aug</span></p>
+							</div>
+						</div>
+						<div class="single-text-box">
+							<h3><a href="#">Amaging Bolg Images Post</a></h3>
+							<ul class="list-unstyled">
+								<li><a href="#">By Admin</a></li>
+								<li><a href="#">22Aug, 2019</a></li>
+								<li><a href="#">20 comments</a></li>
+								<li><a href="#">122 likes</a></li>
+							</ul>
+							<p>Quuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quiaolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt Minim veniam, quis nostrud exercitation ullamco laboris nisi…</p>
+							<div class="blog-btn-box">
+								<a href="#">Read More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% endblock %}
